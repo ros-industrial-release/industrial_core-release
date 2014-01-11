@@ -1,0 +1,15 @@
+ros-hydro-industrial-core (0.3.2-0quantal) quantal; urgency=high
+
+  * Removed header from industrial_utils/utils.h (not required)
+
+ -- Shaun Edwards <sedwards@swri.org>  Fri, 10 Jan 2014 05:00:00 -0000
+
+ros-hydro-industrial-core (0.3.1-0quantal) quantal; urgency=high
+
+  * Added industrial trajectory filters to core meta-package
+  * Converted to catkin
+  * Contributors: Shaun Edwards, gavanderhoorn
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 05:00:00 -0000
+
+
