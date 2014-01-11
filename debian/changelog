@@ -1,0 +1,11 @@
+ros-hydro-simple-message (0.3.1-1raring) raring; urgency=high
+
+  * Added polling check to socket read and muiltiple read calls in order to receive all desired bytes
+  * Removed library export from catkin macro.  Packages that depend on these must declare library dependencies explicitly (by name)
+  * Add error message to socket errors (instead of just errno).
+  * Converted to catkin
+  * Contributors: Christina Gomez, JeremyZoss, ROS, Shaun Edwards, gavanderhoorn, jrgnicho, kphawkins, shaun-edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 05:00:00 -0000
+
+
