@@ -1,0 +1,10 @@
+ros-hydro-industrial-robot-client (0.3.1-1raring) raring; urgency=high
+
+  * Remove obsolete export tags. Fix #43 <https://github.com/shaun-edwards/industrial_core/issues/43>.
+  * Removed library export from catkin macro.  Packages that depend on these must declare library dependencies explicitly (by name)
+  * Converted to catkin
+  * Contributors: JeremyZoss, Shaun Edwards, gavanderhoorn
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 05:00:00 -0000
+
+
