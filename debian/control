@@ -1,0 +1,12 @@
+Source: ros-hydro-industrial-utils
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 7.0.50~), ros-hydro-catkin, ros-hydro-roscpp, ros-hydro-urdf
+Homepage: http://ros.org/wiki/industrial_utils
+Standards-Version: 3.9.2
+
+Package: ros-hydro-industrial-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-roscpp, ros-hydro-urdf
+Description: Industrial utils is a library package that captures common funcitonality for the ROS-Industrial distribution.
