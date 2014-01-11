@@ -2,6 +2,11 @@
 Changelog for package industrial_utils
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.3.2 (2014-01-10)
+------------------
+* Removed header from industrial_utils/utils.h (not required)
+* Contributors: Shaun Edwards
+
 0.3.1 (2014-01-09)
 ------------------
 * Remove obsolete export tags. Fix `#43 <https://github.com/shaun-edwards/industrial_core/issues/43>`_.
