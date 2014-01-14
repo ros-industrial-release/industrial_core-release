@@ -1,0 +1,23 @@
+ros-hydro-industrial-utils (0.3.3-0quantal) quantal; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 13 Jan 2014 05:00:00 -0000
+
+ros-hydro-industrial-utils (0.3.2-0quantal) quantal; urgency=high
+
+  * Removed header from industrial_utils/utils.h (not required)
+  * Contributors: Shaun Edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Fri, 10 Jan 2014 05:00:00 -0000
+
+ros-hydro-industrial-utils (0.3.1-0quantal) quantal; urgency=high
+
+  * Remove obsolete export tags. Fix #43 <https://github.com/shaun-edwards/industrial_core/issues/43>.
+  * Fix #52 <https://github.com/shaun-edwards/industrial_core/issues/52>: ignore fixed joints in param_utils::getJointVelocityLimits
+  * Converted to catkin
+  * Contributors: JeremyZoss, Shaun Edwards, gavanderhoorn
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 05:00:00 -0000
+
+
