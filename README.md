@@ -1,3 +1,30 @@
+## industrial_core - 0.3.4-0
+
+User `ros@ROS` released the packages in the `industrial_core` repository by running `/usr/bin/bloom-release industrial_core --track hydro --rosdistro hydro` on `Wed, 22 Jan 2014 02:55:33 -0000`
+
+These packages were released:
+- `industrial_core`
+- `industrial_deprecated`
+- `industrial_msgs`
+- `industrial_robot_client`
+- `industrial_robot_simulator`
+- `industrial_trajectory_filters`
+- `industrial_utils`
+- `simple_message`
+
+Version of package(s) in repository `industrial_core`:
+- rosdistro version: `0.3.3-0`
+- old version: `0.3.3-0`
+- new version: `0.3.4-0`
+
+Versions of tools used:
+- bloom version: `0.4.4`
+- catkin_pkg version: `0.1.24`
+- rosdep version: `0.10.24`
+- rosdistro version: `0.2.20`
+- vcstools version: `0.1.33`
+
+
 ## industrial_core - 0.3.3-0
 
 User `ros@ROS` released the packages in the `industrial_core` repository by running `/usr/bin/bloom-release industrial_core --track hydro --rosdistro hydro` on `Tue, 14 Jan 2014 02:57:38 -0000`
