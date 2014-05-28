@@ -1,0 +1,12 @@
+Source: ros-hydro-industrial-robot-simulator
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-hydro-catkin, ros-hydro-control-msgs, ros-hydro-industrial-robot-client, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-trajectory-msgs
+Homepage: http://ros.org/wiki/industrial_robot_client
+Standards-Version: 3.9.2
+
+Package: ros-hydro-industrial-robot-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-hydro-control-msgs, ros-hydro-industrial-robot-client, ros-hydro-roscpp, ros-hydro-sensor-msgs, ros-hydro-std-msgs, ros-hydro-trajectory-msgs
+Description: The industrial robot simulator is a stand in for industrial robot driver node(s). It adheres to the driver specification for industrial robot controllers.
