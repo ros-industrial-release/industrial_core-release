@@ -1,0 +1,12 @@
+Source: ros-indigo-industrial-core
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/industrial_core
+Standards-Version: 3.9.2
+
+Package: ros-indigo-industrial-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-industrial-deprecated, ros-indigo-industrial-msgs, ros-indigo-industrial-robot-client, ros-indigo-industrial-robot-simulator, ros-indigo-industrial-trajectory-filters, ros-indigo-industrial-utils, ros-indigo-simple-message
+Description: ROS-Industrial core stack contains packages and libraries for supporing industrial systems
