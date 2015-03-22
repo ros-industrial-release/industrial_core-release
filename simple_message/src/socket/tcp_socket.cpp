@@ -52,16 +52,10 @@ namespace tcp_socket
 {
 
 TcpSocket::TcpSocket()
-// Constructor for UDP socket object
 {
-  this->setSockHandle(this->SOCKET_FAIL);
-  memset(&this->sockaddr_, 0, sizeof(this->sockaddr_));
-  this->setConnected(false);
-
 }
 
 TcpSocket::~TcpSocket()
-// Destructor for UDP socket object
 // Closes socket
 {
   LOG_DEBUG("Destructing TCPSocket");
@@ -84,6 +78,52 @@ int TcpSocket::rawReceiveBytes(char *buffer, shared_int num_bytes)
   rc = RECV(this->getSockHandle(), buffer, num_bytes, 0);
   
   return rc;
+}
+
+bool TcpSocket::rawPoll(int timeout, bool & ready, bool & error)
+{
+  timeval time;
+  fd_set read, write, except;
+  int rc = this->SOCKET_FAIL;
+  bool rtn = false;
+  ready = false;
+  error = false;
+
+  // The select function uses the timeval data structure
+  time.tv_sec = timeout / 1000;
+  time.tv_usec = (timeout % 1000) * 1000;
+
+  FD_ZERO(&read);
+  FD_ZERO(&write);
+  FD_ZERO(&except);
+
+  FD_SET(this->getSockHandle(), &read);
+  FD_SET(this->getSockHandle(), &except);
+
+  rc = SELECT(this->getSockHandle() + 1, &read, &write, &except, &time);
+
+  if (this->SOCKET_FAIL != rc) {
+    if (0 == rc)
+      rtn = false;
+    else {
+      if (FD_ISSET(this->getSockHandle(), &read)) {
+        ready = true;
+        rtn = true;
+      }
+      else if(FD_ISSET(this->getSockHandle(), &except)) {
+        error = true;
+        rtn = true;
+      }
+      else {
+        LOG_WARN("Select returned, but no flags are set");
+        rtn = false;
+      }
+    }
+  } else {
+    this->logSocketError("Socket select function failed", rc, errno);
+    rtn = false;
+  }
+  return rtn;
 }
 
 } //tcp_socket

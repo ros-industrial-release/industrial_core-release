@@ -2,6 +2,11 @@
 Changelog for package industrial_trajectory_filters
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.0 (2015-03-21)
+------------------
+* Added a smoothing filter as a planning request adapter plugin
+* Contributors: Chris Lewis
+
 0.3.4 (2014-01-21)
 ------------------
 * No change
