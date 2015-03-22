@@ -69,6 +69,7 @@
 #endif
 #define INET_ADDR(str) inet_addr(str)
 #define SOCKLEN_T socklen_t
+#define GETHOSTBYNAME(str) gethostbyname(str)
 
 #endif
 
@@ -110,6 +111,7 @@ extern "C" STATUS setsockopt (   /* remove "extern C", if you're using C instead
 #define HTONS(num) mpHtons(num)
 #define INET_ADDR(str) mpInetAddr(str)
 #define SOCKLEN_T unsigned int
+#define GETHOSTBYNAME(str) NULL
 
 #endif
 
@@ -142,7 +144,12 @@ public:
   /**
      * \brief Constructor
      */
-  SimpleSocket(){}
+  SimpleSocket()
+  {
+    this->setSockHandle(this->SOCKET_FAIL);
+    memset(&this->sockaddr_, 0, sizeof(this->sockaddr_));
+    this->setConnected(false);
+  }
 
   /**
      * \brief Destructor
@@ -152,6 +159,14 @@ public:
   bool isConnected()
   {
     return connected_;
+  }
+  
+  // Internally set the state of the connection to be disconnected.
+  // This is needed in UDP connections to signal when a timeout has occurred 
+  // and the connection needs to be reestablished using the handshake protocol.
+  virtual void setDisconnected()
+  {
+    setConnected(false);
   }
   
   /**
@@ -164,7 +179,8 @@ public:
   bool isReadyReceive(int timeout)
   {
     bool r, e;
-    return poll(timeout, r, e);
+    rawPoll(timeout, r, e);
+    return r;
   }
 
 protected:
@@ -214,28 +230,31 @@ protected:
   {
     this->sock_handle_ = sock_handle_;
   }
-  
-  virtual void setConnected(bool connected)
-  {
-    this->connected_ = connected;
-  }
 
+  /**
+   * \deprecated This could report the wrong error number.  The method that takes
+   * errno as an argument should be used instead.
+   * \brief Logs message to error log and reports associated socket system error
+   * \param msg custom message prefixed to system error
+   * \param rc return code from socket
+   */
+  __attribute__((deprecated(
+                   "Please use: logSocketError(const char* msg, const int rc, const int error_no)")))
   void logSocketError(const char* msg, int rc)
   {
-    int errno_ = errno;
-    LOG_ERROR("%s, rc: %d. Error: '%s' (errno: %d)", msg, rc, strerror(errno_), errno_);
+    logSocketError(msg, rc, errno);
   }
-  
+
   /**
-   * \brief polls socket for data or error
-   *
-   * \param timeout (ms) negative or zero values result in blocking
-   * \param ready true if ready
-   * \param except true if exception
-   *
-   * \return true if function DID NOT timeout (must check flags)
+   * \brief Logs message to error log and reports associated socket system error
+   * \param msg custom message prefixed to system error
+   * \param rc return code from socket
+   * \param error_no errno value see (http://man7.org/linux/man-pages/man3/errno.3.html )
    */
-  bool poll(int timeout, bool & ready, bool & error);
+  void logSocketError(const char* msg, const int rc, const int error_no)
+  {
+    LOG_ERROR("%s, rc: %d. Error: '%s' (errno: %d)", msg, rc, strerror(error_no), error_no);
+  }
   
   // Send/Receive functions (inherited classes should override raw methods
   // Virtual
@@ -247,6 +266,20 @@ protected:
       industrial::shared_types::shared_int num_bytes)=0;
   virtual int rawReceiveBytes(char *buffer,
       industrial::shared_types::shared_int num_bytes)=0;
+  /**
+   * \brief polls socket for data or error
+   *
+   * \param timeout (ms) negative or zero values result in blocking
+   * \param ready true if ready
+   * \param except true if exception
+   *
+   * \return true if function DID NOT timeout (must check flags)
+   */
+  virtual bool rawPoll(int timeout, bool & ready, bool & error)=0;
+  virtual void setConnected(bool connected)
+  {
+    this->connected_ = connected;
+  }
 
 };
 
