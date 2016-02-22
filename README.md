@@ -1,3 +1,32 @@
+## industrial_core (jade) - 0.4.3-0
+
+The packages in the `industrial_core` repository were released into the `jade` distro by running `/usr/bin/bloom-release industrial_core --track jade --rosdistro jade --new-track` on `Mon, 22 Feb 2016 04:18:12 -0000`
+
+These packages were released:
+- `industrial_core`
+- `industrial_deprecated`
+- `industrial_msgs`
+- `industrial_robot_client`
+- `industrial_robot_simulator`
+- `industrial_trajectory_filters`
+- `industrial_utils`
+- `simple_message`
+
+Version of package(s) in repository `industrial_core`:
+- upstream repository: https://github.com/ros-industrial/industrial_core.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.4.3-0`
+
+Versions of tools used:
+- bloom version: `0.5.20`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.2`
+- rosdistro version: `0.4.4`
+- vcstools version: `0.1.37`
+
+
 ## industrial_core (indigo) - 0.4.3-0
 
 The packages in the `industrial_core` repository were released into the `indigo` distro by running `/usr/bin/bloom-release industrial_core --track indigo --rosdistro indigo` on `Mon, 08 Feb 2016 02:22:13 -0000`
