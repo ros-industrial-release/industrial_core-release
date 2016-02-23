@@ -1,0 +1,12 @@
+Source: ros-jade-industrial-robot-client
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-jade-actionlib, ros-jade-actionlib-msgs, ros-jade-catkin, ros-jade-control-msgs, ros-jade-industrial-msgs, ros-jade-industrial-utils, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-simple-message, ros-jade-std-msgs, ros-jade-trajectory-msgs, ros-jade-urdf
+Homepage: http://ros.org/wiki/industrial_robot_client
+Standards-Version: 3.9.2
+
+Package: ros-jade-industrial-robot-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jade-actionlib, ros-jade-actionlib-msgs, ros-jade-control-msgs, ros-jade-industrial-msgs, ros-jade-industrial-utils, ros-jade-roscpp, ros-jade-sensor-msgs, ros-jade-simple-message, ros-jade-std-msgs, ros-jade-trajectory-msgs, ros-jade-urdf
+Description: industrial robot client contains generic clients for connecting to industrial robot controllers with servers that adhere to the simple message protocol.
