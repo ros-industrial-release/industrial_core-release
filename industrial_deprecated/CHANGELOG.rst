@@ -2,6 +2,11 @@
 Changelog for package industrial_deprecated
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.6.0 (2017-01-16)
+------------------
+* Added C++ 11 compile option
+* Contributors: Victor Lamoine
+
 0.5.1 (2017-01-15)
 ------------------
 * No changes
