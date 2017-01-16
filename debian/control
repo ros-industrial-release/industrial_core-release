@@ -1,0 +1,13 @@
+Source: ros-kinetic-simple-message
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-industrial-msgs, ros-kinetic-roscpp
+Homepage: http://ros.org/wiki/simple_message
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-simple-message
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-industrial-msgs, ros-kinetic-roscpp
+Description: simple_message defines a simple messaging connection and protocol for communicating with an industrial robot controller.
+ Additional handler and manager classes are included for handling connection limited systems. This package is part of the ROS-Industrial program.
