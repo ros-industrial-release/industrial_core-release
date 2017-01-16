@@ -1,0 +1,97 @@
+ros-kinetic-industrial-robot-simulator (0.6.0-0jessie) jessie; urgency=high
+
+  * Added C++ 11 compile option
+  * Contributors: Victor Lamoine
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 16 Jan 2017 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.5.1-0jessie) jessie; urgency=high
+
+  * robot_simulator: clarify err msg when controller_joint_names is missing.
+  * Make industrial_robot_simulator python3 compatible.
+  * Contributors: G.A. vd. Hoorn, Maarten de Vries
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 15 Jan 2017 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.5.0-0jessie) jessie; urgency=high
+
+  * Added industrial_robot_client test depends as a workaround to test failures
+  * Updated industrial_robot_simulator package.xml to version 2 format
+  * Contributors: Shaun Edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 22 Feb 2016 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.4.3-0jessie) jessie; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 07 Feb 2016 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.4.2-0jessie) jessie; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Wed, 21 Oct 2015 05:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.4.1-0jessie) jessie; urgency=high
+
+  * Fixed changelog links to point to main repo
+  * Contributors: Shaun Edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 23 Mar 2015 05:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.4.0-0jessie) jessie; urgency=high
+
+  * Fixed roslaunch test dependency and build depends for robot simulator package
+  * Corrected roslaunch test and added rospy depends to industrial_robot_simulator package
+  * Removed extraneous dependencies.  Re-enable launch test
+  * robot_simulator: add TU Delft copyright as well.
+  * robot_simulator: add BSD license header. Fix #90 <https://github.com/ros-industrial/industrial_core/issues/90>.
+  * robot_simulator: set explicit queue size in Publishers. Fix #99 <https://github.com/ros-industrial/industrial_core/issues/99>.
+    Queue size of 1 is most likely sufficient for these topics.
+  * robot_simulator: add GetRobotInfo svc server.
+  * robot_simulator: quiet down node (use logdebug()).
+  * Merge pull request #88 <https://github.com/ros-industrial/industrial_core/issues/88> from gavanderhoorn/rob_sim_robot_status
+    Add RobotStatus publishing to robot simulator node
+  * robot_simulator: remove redundant load_manifest(). Fix #63 <https://github.com/ros-industrial/industrial_core/issues/63>.
+  * robot_simulator: update manifest (depend on industrial_msgs).
+  * robot_simulator: publish RobotStatus msgs as well.
+  * robot_simulator: make initial joint state configurable. Fix #73 <https://github.com/ros-industrial/industrial_core/issues/73>.
+  * Contributors: Shaun Edwards, gavanderhoorn
+
+ -- Shaun Edwards <sedwards@swri.org>  Sat, 21 Mar 2015 05:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.3.4-0jessie) jessie; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Tue, 21 Jan 2014 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.3.3-0jessie) jessie; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 13 Jan 2014 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.3.2-0jessie) jessie; urgency=high
+
+  * Removed header from industrial_utils/utils.h (not required)
+
+ -- Shaun Edwards <sedwards@swri.org>  Fri, 10 Jan 2014 06:00:00 -0000
+
+ros-kinetic-industrial-robot-simulator (0.3.1-0jessie) jessie; urgency=high
+
+  * robot_simulator: avoid hardcoded python path. Fix #53 <https://github.com/ros-industrial/industrial_core/issues/53>.
+  * Remove obsolete export tags. Fix #43 <https://github.com/ros-industrial/industrial_core/issues/43>.
+  * Add install target for launchfile in sim pkg.
+    Fix #35 <https://github.com/ros-industrial/industrial_core/issues/35>.
+  * Fix issue #6 <https://github.com/ros-industrial/industrial_core/issues/6> (Install target fails for industrial_robot_simulator): setup.py file not required for python executables, see http://ros.org/wiki/catkin/migrating_from_rosbuild
+  * bugFix: #61 <https://github.com/ros-industrial/industrial_core/issues/61> - fix joint-name remapping in industrial_robot_simulator
+  * Added interpolated motion to MotionControllerSimulator class. Includes addition of interpolate(), and modification of  _motion_worker()
+  * New rospy.get_param() added to IndustrialRobotSimulatorNode in order to assign motion_update_rate
+  * Converted to catkin
+  * Contributors: JeremyZoss, Shaun Edwards, dpsolomon, gavanderhoorn, jrgnicho
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 06:00:00 -0000
+
+
