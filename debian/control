@@ -1,0 +1,13 @@
+Source: ros-melodic-industrial-msgs
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <sedwards@swri.org>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-genmsg, ros-melodic-message-generation, ros-melodic-std-msgs, ros-melodic-trajectory-msgs
+Homepage: http://ros.org/wiki/industrial_msg
+Standards-Version: 3.9.2
+
+Package: ros-melodic-industrial-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-genmsg, ros-melodic-message-runtime, ros-melodic-std-msgs, ros-melodic-trajectory-msgs
+Description: The industrial message package containes industrial specific messages definitions.
+ This package is part of the ROS-Industrial program.
