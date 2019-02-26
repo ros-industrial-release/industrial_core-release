@@ -2,6 +2,11 @@
 Changelog for package industrial_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.7.0 (2019-02-12)
+------------------
+* msgs: fix minor typo in RobotStatus comment. Fix `#186 <https://github.com/ros-industrial/industrial_core/issues/186>`_.
+* Contributors: G.A. vd. Hoorn, Levi Armstrong, Shaun Edwards
+
 0.6.0 (2017-01-16)
 ------------------
 * Added C++ 11 compile option
