@@ -1,0 +1,12 @@
+Source: ros-kinetic-industrial-core
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <shaun.edwards@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: http://ros.org/wiki/industrial_core
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-industrial-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-industrial-deprecated, ros-kinetic-industrial-msgs, ros-kinetic-industrial-robot-client, ros-kinetic-industrial-robot-simulator, ros-kinetic-industrial-trajectory-filters, ros-kinetic-industrial-utils, ros-kinetic-simple-message
+Description: ROS-Industrial core stack contains packages and libraries for supporing industrial systems
