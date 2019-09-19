@@ -1,0 +1,13 @@
+Source: ros-kinetic-industrial-robot-simulator
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <shaun.edwards@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roslaunch (>= 1.9.55)
+Homepage: http://ros.org/wiki/industrial_robot_simulator
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-industrial-robot-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-kinetic-control-msgs, ros-kinetic-industrial-msgs, ros-kinetic-industrial-robot-client, ros-kinetic-rospy, ros-kinetic-sensor-msgs, ros-kinetic-trajectory-msgs
+Description: The industrial robot simulator is a stand in for industrial robot driver node(s).
+ It adheres to the driver specification for industrial robot controllers.
