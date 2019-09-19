@@ -1,3 +1,34 @@
+## industrial_core (kinetic) - 0.7.1-1
+
+The packages in the `industrial_core` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --rosdistro=kinetic industrial_core` on `Thu, 19 Sep 2019 19:06:59 -0000`
+
+These packages were released:
+- `industrial_core`
+- `industrial_deprecated`
+- `industrial_msgs`
+- `industrial_robot_client`
+- `industrial_robot_simulator`
+- `industrial_trajectory_filters`
+- `industrial_utils`
+- `simple_message`
+
+Version of package(s) in repository `industrial_core`:
+
+- upstream repository: https://github.com/ros-industrial/industrial_core.git
+- release repository: https://github.com/ros-industrial-release/industrial_core-release.git
+- rosdistro version: `0.7.0-0`
+- old version: `0.7.0-0`
+- new version: `0.7.1-1`
+
+Versions of tools used:
+
+- bloom version: `0.8.0`
+- catkin_pkg version: `0.4.13`
+- rosdep version: `0.15.2`
+- rosdistro version: `0.7.4`
+- vcstools version: `0.1.42`
+
+
 ## industrial_core (kinetic) - 0.7.0-0
 
 The packages in the `industrial_core` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release industrial_core --rosdistro kinetic` on `Tue, 26 Feb 2019 20:35:56 -0000`
