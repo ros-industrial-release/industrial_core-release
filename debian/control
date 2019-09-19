@@ -1,0 +1,12 @@
+Source: ros-melodic-industrial-core
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <shaun.edwards@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/industrial_core
+Standards-Version: 3.9.2
+
+Package: ros-melodic-industrial-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-industrial-deprecated, ros-melodic-industrial-msgs, ros-melodic-industrial-robot-client, ros-melodic-industrial-robot-simulator, ros-melodic-industrial-trajectory-filters, ros-melodic-industrial-utils, ros-melodic-simple-message
+Description: ROS-Industrial core stack contains packages and libraries for supporing industrial systems
