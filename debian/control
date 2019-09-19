@@ -1,0 +1,13 @@
+Source: ros-melodic-industrial-trajectory-filters
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <shaun.edwards@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-moveit-core, ros-melodic-moveit-ros-planning, ros-melodic-orocos-kdl, ros-melodic-pluginlib, ros-melodic-trajectory-msgs
+Homepage: http://ros.org/wiki/industrial_trajectory_filters
+Standards-Version: 3.9.2
+
+Package: ros-melodic-industrial-trajectory-filters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-moveit-core, ros-melodic-moveit-ros-planning, ros-melodic-orocos-kdl, ros-melodic-pluginlib, ros-melodic-trajectory-msgs
+Description: ROS Industrial libraries/plugins for filtering trajectories.
+ This package is part of the ROS Industrial program and contains libraries and moveit plugins for filtering robot trajectories.
