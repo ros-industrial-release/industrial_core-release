@@ -1,0 +1,13 @@
+Source: ros-melodic-industrial-deprecated
+Section: misc
+Priority: extra
+Maintainer: Shaun Edwards <shaun.edwards@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: http://ros.org/wiki/industrial_deprecated
+Standards-Version: 3.9.2
+
+Package: ros-melodic-industrial-deprecated
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The Industrial deprecated package contains nodes, launch files, etc...
+ that are slated for deprecation. This package is the last place something will end up before being deleted. If you are missing a package/node and find it's contents here, then you should consider a replacement.
