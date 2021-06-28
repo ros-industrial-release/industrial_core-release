@@ -1,0 +1,12 @@
+Source: ros-noetic-industrial-utils
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-roscpp, ros-noetic-rosunit, ros-noetic-urdf
+Homepage: http://ros.org/wiki/industrial_utils
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-utils
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-roscpp, ros-noetic-urdf
+Description: Industrial utils is a library package that captures common funcitonality for the ROS-Industrial distribution.
