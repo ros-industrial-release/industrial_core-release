@@ -1,3 +1,34 @@
+## industrial_core (melodic) - 0.7.2-1
+
+The packages in the `industrial_core` repository were released into the `melodic` distro by running `/home/klaas/venv_catkin_releases/bin/bloom-release industrial_core --rosdistro=melodic -e` on `Mon, 28 Jun 2021 12:10:30 -0000`
+
+These packages were released:
+- `industrial_core`
+- `industrial_deprecated`
+- `industrial_msgs`
+- `industrial_robot_client`
+- `industrial_robot_simulator`
+- `industrial_trajectory_filters`
+- `industrial_utils`
+- `simple_message`
+
+Version of package(s) in repository `industrial_core`:
+
+- upstream repository: https://github.com/ros-industrial/industrial_core.git
+- release repository: https://github.com/ros-industrial-release/industrial_core-release.git
+- rosdistro version: `0.7.1-1`
+- old version: `0.7.1-1`
+- new version: `0.7.2-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.7`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## industrial_core (noetic) - 0.7.1-1
 
 The packages in the `industrial_core` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --rosdistro=noetic --track=noetic industrial_core --edit` on `Thu, 05 Nov 2020 12:42:32 -0000`
