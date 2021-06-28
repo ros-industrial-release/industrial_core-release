@@ -1,0 +1,13 @@
+Source: ros-melodic-industrial-robot-simulator
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-roslaunch (>= 1.9.55)
+Homepage: http://ros.org/wiki/industrial_robot_simulator
+Standards-Version: 3.9.2
+
+Package: ros-melodic-industrial-robot-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-rospkg, ros-melodic-control-msgs, ros-melodic-industrial-msgs, ros-melodic-industrial-robot-client, ros-melodic-rospy, ros-melodic-sensor-msgs, ros-melodic-trajectory-msgs
+Description: The industrial robot simulator is a stand in for industrial robot driver node(s).
+ It adheres to the driver specification for industrial robot controllers.
