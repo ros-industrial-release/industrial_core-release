@@ -1,0 +1,13 @@
+Source: ros-noetic-industrial-msgs
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-message-generation, ros-noetic-std-msgs, ros-noetic-trajectory-msgs
+Homepage: http://ros.org/wiki/industrial_msg
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-msgs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-message-runtime, ros-noetic-std-msgs, ros-noetic-trajectory-msgs
+Description: The industrial message package containes industrial specific messages definitions.
+ This package is part of the ROS-Industrial program.
