@@ -1,0 +1,13 @@
+Source: ros-noetic-industrial-deprecated
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/industrial_deprecated
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-deprecated
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: The Industrial deprecated package contains nodes, launch files, etc...
+ that are slated for deprecation. This package is the last place something will end up before being deleted. If you are missing a package/node and find it's contents here, then you should consider a replacement.
