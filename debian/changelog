@@ -1,0 +1,100 @@
+ros-melodic-industrial-msgs (0.7.2-1bionic) bionic; urgency=high
+
+  * target Melodic and newer.
+  * catkin_lint all packages (#266 <https://github.com/ros-industrial/industrial_core/issues/266>)
+  * add Noetic compatibility (#258 <https://github.com/ros-industrial/industrial_core/issues/258>)
+  * mark as arch independent (#248 <https://github.com/ros-industrial/industrial_core/issues/248>)
+  * update maintainers (#243 <https://github.com/ros-industrial/industrial_core/issues/243>)
+  * for a complete list of changes see the commit log for 0.7.2 <https://github.com/ros-industrial/industrial_core/compare/0.7.1...0.7.2>.
+  * contributors: Felix Messmer, ipa-nhg, Simon Schmeisser, gavanderhoorn
+
+ -- G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>  Sun, 27 Jun 2021 22:00:00 -0000
+
+ros-melodic-industrial-msgs (0.7.1-1bionic) bionic; urgency=high
+
+  * Updated all package xml files to version 2 (#232 <https://github.com/ros-industrial/industrial_core/issues/232>)
+  * all: update maintainer email addresses (#222 <https://github.com/ros-industrial/industrial_core/issues/222>)
+  * remove unneeded genmsg dependency (#223 <https://github.com/ros-industrial/industrial_core/issues/223>)
+  * Contributors: Jeremy Zoss, Jorge Nicho, gavanderhoorn
+
+ -- Shaun Edwards <shaun.edwards@gmail.com>  Wed, 18 Sep 2019 22:00:00 -0000
+
+ros-melodic-industrial-msgs (0.7.0-1bionic) bionic; urgency=high
+
+  * msgs: fix minor typo in RobotStatus comment. Fix #186 <https://github.com/ros-industrial/industrial_core/issues/186>.
+  * Contributors: G.A. vd. Hoorn, Levi Armstrong, Shaun Edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 11 Feb 2019 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.6.0-1bionic) bionic; urgency=high
+
+  * Added C++ 11 compile option
+  * Contributors: Victor Lamoine
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 15 Jan 2017 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.5.1-1bionic) bionic; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Sat, 14 Jan 2017 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.5.0-1bionic) bionic; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 21 Feb 2016 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.4.3-1bionic) bionic; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Sat, 06 Feb 2016 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.4.2-1bionic) bionic; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Tue, 20 Oct 2015 22:00:00 -0000
+
+ros-melodic-industrial-msgs (0.4.1-1bionic) bionic; urgency=high
+
+  * Fixed changelog links to point to main repo
+  * Contributors: Shaun Edwards
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 22 Mar 2015 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.4.0-1bionic) bionic; urgency=high
+
+  * No changes
+
+ -- Shaun Edwards <sedwards@swri.org>  Fri, 20 Mar 2015 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.3.4-1bionic) bionic; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Mon, 20 Jan 2014 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.3.3-1bionic) bionic; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Sun, 12 Jan 2014 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.3.2-1bionic) bionic; urgency=high
+
+  * No change
+
+ -- Shaun Edwards <sedwards@swri.org>  Thu, 09 Jan 2014 23:00:00 -0000
+
+ros-melodic-industrial-msgs (0.3.1-1bionic) bionic; urgency=high
+
+  * Remove obsolete export tags. Fix #43 <https://github.com/ros-industrial/industrial_core/issues/43>.
+  * add joint_path_command service to Industrial Robot Client
+  * Converted to catkin
+  * Contributors: JeremyZoss, Shaun Edwards, gavanderhoorn
+
+ -- Shaun Edwards <sedwards@swri.org>  Wed, 08 Jan 2014 23:00:00 -0000
+
+
