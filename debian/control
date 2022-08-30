@@ -1,0 +1,12 @@
+Source: ros-noetic-industrial-robot-client
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-catkin, ros-noetic-control-msgs, ros-noetic-industrial-msgs, ros-noetic-industrial-utils, ros-noetic-roscpp, ros-noetic-roslaunch <!nocheck>, ros-noetic-rosunit <!nocheck>, ros-noetic-sensor-msgs, ros-noetic-simple-message, ros-noetic-std-msgs, ros-noetic-trajectory-msgs, ros-noetic-urdf
+Homepage: http://ros.org/wiki/industrial_robot_client
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-robot-client
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-control-msgs, ros-noetic-industrial-msgs, ros-noetic-industrial-utils, ros-noetic-robot-state-publisher, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-simple-message, ros-noetic-std-msgs, ros-noetic-trajectory-msgs, ros-noetic-urdf
+Description: industrial robot client contains generic clients for connecting to industrial robot controllers with servers that adhere to the simple message protocol.
