@@ -1,0 +1,13 @@
+Source: ros-noetic-industrial-robot-simulator
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin, ros-noetic-roslaunch (>= 1.9.55) <!nocheck>
+Homepage: http://ros.org/wiki/industrial_robot_simulator
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-robot-simulator
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python3-rospkg, ros-noetic-control-msgs, ros-noetic-industrial-msgs, ros-noetic-industrial-robot-client, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-trajectory-msgs
+Description: The industrial robot simulator is a stand in for industrial robot driver node(s).
+ It adheres to the driver specification for industrial robot controllers.
