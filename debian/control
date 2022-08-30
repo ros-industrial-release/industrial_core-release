@@ -1,0 +1,12 @@
+Source: ros-noetic-industrial-core
+Section: misc
+Priority: optional
+Maintainer: G.A. vd. Hoorn (TU Delft Robotics Institute) <g.a.vanderhoorn@tudelft.nl>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/industrial_core
+Standards-Version: 3.9.2
+
+Package: ros-noetic-industrial-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-industrial-deprecated, ros-noetic-industrial-msgs, ros-noetic-industrial-robot-client, ros-noetic-industrial-robot-simulator, ros-noetic-industrial-trajectory-filters, ros-noetic-industrial-utils, ros-noetic-simple-message
+Description: ROS-Industrial core stack contains packages and libraries for supporing industrial systems
