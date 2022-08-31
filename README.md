@@ -1,6 +1,6 @@
 ## industrial_core (noetic) - 0.7.3-1
 
-The packages in the `industrial_core` repository were released into the `noetic` distro by running `/home/klaas/venv_catkin_releases/bin/bloom-release industrial_core --rosdistro=noetic` on `Tue, 30 Aug 2022 12:08:04 -0000`
+The packages in the `industrial_core` repository were released into the `noetic` distro by running `/usr/bin/bloom-release industrial_core --rosdistro=noetic` on `Tue, 30 Aug 2022 12:08:04 -0000`
 
 These packages were released:
 - `industrial_core`
